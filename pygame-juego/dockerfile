@@ -17,6 +17,6 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN pip install --no-cache-dir -r requirements.txt
-ENV DISPLAY=:1
+ENV DISPLAY=:0
 
 CMD ["python","juego.py"]
